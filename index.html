@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
     <!-- daisy ui -->
@@ -32,8 +32,11 @@
       referrerpolicy="no-referrer"
     />
     <style>
-      .adlam {
+      .adlam-regular {
         font-family: "ADLaM Display", serif;
+      }
+      .sora-regular {
+        font-family: "Sora", serif;
       }
     </style>
     <script>
@@ -42,7 +45,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              accent: "#FFDC26",
+              "bg-btn": "#FFDC26",
               "card-bg": "#F9DF8A",
               secondary: "#FFF9F4",
               "grad-1": "rgb(248, 204, 251) 1.286%",
@@ -55,8 +58,94 @@
       };
     </script>
   </head>
-  <body class="adlam">
-    <header></header>
+  <body class="adlam-regular">
+    <header>
+      <nav class="sora-regular bg-secondary">
+        <div class="container mx-auto navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li class="text-md font-semibold"><a>Find a pet</a></li>
+                <li class="text-md font-semibold"><a>Breed</a></li>
+                <li class="text-md font-semibold"><a>Contact Us</a></li>
+              </ul>
+            </div>
+
+            <a class="items-center gap-1 hidden lg:inline-flex text-xl"
+              ><span><img src="c1-assets/logo-header.png" alt="" /></span
+              >Browse<span class="text-bg-btn">4</span>Pets</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-md font-semibold"><a>Find a pet</a></li>
+              <li class="text-md font-semibold"><a>Breed</a></li>
+              <li class="text-md font-semibold"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-2">
+            <i class="hidden lg:inline-flex fa-regular fa-bell"></i>
+            <i class="hidden lg:inline-flex fa-solid fa-magnifying-glass"></i>
+
+            <button
+              class="px-10 hidden lg:inline-flex btn btn-ghost border-bg-btn"
+            >
+              Login
+            </button>
+            <button class="px-10 hidden lg:inline-flex btn bg-bg-btn">
+              Register
+            </button>
+            <img
+              class="inline-flex lg:hidden px-2"
+              src="c1-assets/logo-header.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </nav>
+      <section class="container mx-auto">
+        <div class="relative w-full p-3">
+          <div
+            class="absolute z-10 md:top-20 md:left-10 md:w-2/3 space-y-5 bg-transparent"
+          >
+            <h2 class="text-2xl lg:text-5xl font-base">
+              Pamper Your Pet, <br />Because They Deserve <br />the Best
+            </h2>
+            <p class="text-sm sora-regular lg:text-xl font-normal">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends. Shop now and make tails wag with joy!
+            </p>
+            <button
+              class="btn sora-regular bg-bg-btn px-10 font-bold sora-regular"
+            >
+              Find a pet
+            </button>
+          </div>
+          <div class="top-50">
+            <img class="w-full" src="./c1-assets/cat-big.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </header>
     <main></main>
     <footer></footer>
   </body>
